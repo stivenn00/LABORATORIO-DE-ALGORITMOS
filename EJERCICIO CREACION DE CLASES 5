@@ -1,0 +1,12 @@
+import math
+
+class Circulo:
+    def __init__(self, radio, diametro):
+        self.radio = radio
+        self.diametro = diametro
+
+    def area(self):
+        return math.pi * (self.radio ** 2)
+
+    def circunferencia(self):
+        return math.pi * self.diametro
