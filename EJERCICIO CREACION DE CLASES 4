@@ -1,0 +1,10 @@
+class Rectangulo:
+    def __init__(self, longitud, ancho):
+        self.longitud = longitud
+        self.ancho = ancho
+
+    def area(self):
+        return self.longitud * self.ancho
+
+    def perimetro(self):
+        return 2 * (self.longitud + self.ancho)
