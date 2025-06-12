@@ -1,0 +1,15 @@
+class Libro:
+    def __init__(self, titulo, autor, año_publicacion):
+        self.titulo = titulo
+        self.autor = autor
+        self.año_publicacion = año_publicacion
+
+    def descripcion(self):
+        return f"{self.titulo}, escrito por {self.autor} en {self.año_publicacion}"
+
+    def es_clasico(self, año_actual):
+        return año_actual - self.año_publicacion > 50
+
+libro1 = Libro("Cien años de soledad", "Gabriel García Márquez", 1967)
+print(libro1.descripcion())
+print("¿Es clásico?", libro1.es_clasico(2025))
