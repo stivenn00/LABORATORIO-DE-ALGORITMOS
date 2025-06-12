@@ -1,0 +1,23 @@
+class Persona:
+    def __init__(self, nombre, edad, altura):
+        self.nombre = nombre
+        self.edad = edad
+        self.altura = altura
+
+    def obtener_nombre(self):
+        return self.nombre
+
+    def establecer_nombre(self, nombre):
+        self.nombre = nombre
+
+    def obtener_edad(self):
+        return self.edad
+
+    def establecer_edad(self, edad):
+        self.edad = edad
+
+    def obtener_altura(self):
+        return self.altura
+
+    def establecer_altura(self, altura):
+        self.altura = altura
