@@ -1,0 +1,8 @@
+juego1 = Juego("The Witcher 3", "RPG", 1500)
+
+juego1.mostrar_info()
+
+if juego1.esta_en_oferta(2000):
+    print("¡El juego está en oferta!")
+else:
+    print("El juego no está en oferta.")
