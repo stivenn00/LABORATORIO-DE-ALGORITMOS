@@ -1,0 +1,13 @@
+class Juego:
+    def __init__(self, nombre, genero, precio):
+        self.nombre = nombre
+        self.genero = genero
+        self.precio = precio
+
+    def mostrar_info(self):
+        print(f"Nombre: {self.nombre}")
+        print(f"Género: {self.genero}")
+        print(f"Precio: ${self.precio:.2f}")
+
+    def esta_en_oferta(self, limite):
+        return self.precio < limite
