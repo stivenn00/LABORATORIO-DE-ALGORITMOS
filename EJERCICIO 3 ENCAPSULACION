@@ -1,0 +1,29 @@
+class CuentaBancaria:
+    def __init__(self, titular, saldo, numero_cuenta):
+        self.titular = titular
+        self.saldo = saldo
+        self.numero_cuenta = numero_cuenta
+
+    def depositar(self, monto):
+        if monto > 0:
+            self.saldo += monto
+        else:
+            print("El monto debe ser positivo")
+
+    def retirar(self, monto):
+        if 0 < monto <= self.saldo:
+            self.saldo -= monto
+        else:
+            print("Fondos insuficientes o monto inválido")
+
+    def mostrar_informacion(self):
+        print(f"Titular: {self.titular}")
+        print(f"Número de cuenta: {self.numero_cuenta}")
+        print(f"Saldo: {self.saldo}")
+
+cuenta1 = CuentaBancaria("Ana", 1000, "12345678")
+cuenta1.mostrar_informacion()
+cuenta1.depositar(500)
+cuenta1.retirar(300)
+cuenta1.retirar(1500)
+cuenta1.mostrar_informacion()
